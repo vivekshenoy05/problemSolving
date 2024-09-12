@@ -9,7 +9,7 @@
 const findMin = (arr)=>{
     let sorted =  arr.sort((a,b)=>{
         if(a<b){
-            return -1
+            return -1; // -l means ascending
         }
     })
     return sorted[0]
@@ -17,7 +17,7 @@ const findMin = (arr)=>{
 
 
 console.log(findMin([5,10,2,8])); //Output: 2
-console.log(findMin([5,-3,0,12,-7])); //Output: 7
+console.log(findMin([5,-3,0,12,-7])); //Output: -7
 console.log(findMin([]));//Output: undefined or any auitable message of empty array
 
 // method 2
