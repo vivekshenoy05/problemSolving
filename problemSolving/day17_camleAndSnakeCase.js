@@ -37,4 +37,11 @@ const toCamelCase1 = (str)=>{
 
 console.log(toCamelCase1('hello world vivek')); //output: helloWorldVivek
 
-// console.log(toSnakeCase('helloWorld')); //output: hello_world
+
+const toSnakeCase = (str)=>{
+   str = str.trim().toLowerCase().split(' ');
+   console.log(str);
+   return str.join('_');
+}
+
+console.log(toSnakeCase('hello World')); //output: hello_world
